@@ -1,0 +1,29 @@
+{
+  "name": "fc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate-create": "DATABASE_URL=postgres://furytale@localhost:5432/flashkore ./node_modules/.bin/pg-migrate create",
+    "migrate-up": "DATABASE_URL=postgres://furytale@localhost:5432/flashkore ./node_modules/.bin/pg-migrate up",
+    "migrate-down": "DATABASE_URL=postgres://furytale@localhost:5432/flashkore ./node_modules/.bin/pg-migrate down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furytale/fc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furytale/fc/issues"
+  },
+  "homepage": "https://github.com/furytale/fc#readme",
+  "devDependencies": {
+    "node-pg-migrate": "^1.2.2"
+  },
+  "dependencies": {
+    "pg": "^6.1.5",
+    "pg-promise": "^5.6.4"
+  }
+}
