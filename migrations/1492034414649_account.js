@@ -1,7 +1,7 @@
 exports.up = function(pgm) {
     var columns = {
         "name": {
-            type: "char",
+            type: "char(20)",
             unique: false,
             primaryKey: false,
             notNull: true,
@@ -21,7 +21,7 @@ exports.up = function(pgm) {
             onUpdate: null,
             default: 0
         },
-        "isnegative": {
+        "isNegative": {
             type: "boolean",
             unique: false,
             primaryKey: false,
@@ -33,7 +33,7 @@ exports.up = function(pgm) {
             default: "false"
         },
         "currency": {
-            type: "char",
+            type: "char(3)",
             unique: false,
             primaryKey: false,
             notNull: true,
@@ -44,14 +44,14 @@ exports.up = function(pgm) {
             default: "usd"
         },
         "id": {
-            type: "bigint",
+            type: "bigserial",
             unique: true,
             primaryKey: true,
             notNull: true,
             check: null,
             references: null,
             onDelete: null,
-            onUpdate: null,
+            onUpdate: null
         }
     };
     pgm.createTable('account', columns);

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate-create": "DATABASE_URL=postgres://furytale@localhost:5432/flashkore ./node_modules/.bin/pg-migrate create",
-    "migrate-up": "DATABASE_URL=postgres://furytale@localhost:5432/flashkore ./node_modules/.bin/pg-migrate up",
-    "migrate-down": "DATABASE_URL=postgres://furytale@localhost:5432/flashkore ./node_modules/.bin/pg-migrate down"
+    "migrate-create": "DATABASE_URL=postgres://postgres:kolo2010@localhost:5432/flashkore ./node_modules/.bin/pg-migrate create",
+    "migrate-up": "DATABASE_URL=postgres://postgres:kolo2010@localhost:5432/flashkore ./node_modules/.bin/pg-migrate up",
+    "migrate-down": "DATABASE_URL=postgres://postgres:kolo2010@localhost:5432/flashkore ./node_modules/.bin/pg-migrate down"
   },
   "repository": {
     "type": "git",
