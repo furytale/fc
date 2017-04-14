@@ -1,4 +1,3 @@
 require('./server.babel.js');
-require('./../lib/models/account');
-require('./../lib/models/transfer');
-require('./../lib/models/operation');
+require('dotenv').load({ silent: true });
+require('./../lib/controllers/index');
